@@ -1,0 +1,21 @@
+{
+  "family": "php-ecs-task",
+  "executionRoleArn": "arn:aws:iam::<YOUR_ACCOUNT_ID>:role/ECSExecutionRole",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "php-container",
+      "image": "<IMAGE_PLACEHOLDER>",
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512"
+}
