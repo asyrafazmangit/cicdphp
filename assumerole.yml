@@ -1,0 +1,4 @@
+Effect: Allow
+Principal:
+  AWS: arn:aws:iam::<SG_ACCOUNT_ID>:role/CodePipelineServiceRole
+Action: sts:AssumeRole
