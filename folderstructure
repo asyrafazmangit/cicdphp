@@ -1,0 +1,7 @@
+php-ecs-app/
+├── Dockerfile
+├── src/
+│   └── index.php
+├── appspec.yaml
+├── taskdef.json
+└── buildspec.yml
